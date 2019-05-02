@@ -1,0 +1,9 @@
+package com.stackroute.domain;
+
+public class Actor {
+	public void hello()
+	{
+		System.out.println("Hello");
+	}
+
+}

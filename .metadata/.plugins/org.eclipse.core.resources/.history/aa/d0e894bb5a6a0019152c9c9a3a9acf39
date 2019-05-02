@@ -1,0 +1,8 @@
+package com.stackroute.domain;
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class BeanLifeCycleDemoBean implements BeanPostProcessor{
+	
+
+}

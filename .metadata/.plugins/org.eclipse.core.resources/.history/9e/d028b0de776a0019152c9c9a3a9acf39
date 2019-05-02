@@ -1,0 +1,11 @@
+package com.stackroute;
+
+@Controller
+public class GreetController {
+
+	@RequestMapping("/greet")
+	public void greet()
+	{
+		
+	}
+}

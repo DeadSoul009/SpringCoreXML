@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+/home/stakroute02/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1325228143.index
+3623104981.index
+3499750860.index
+972706041.index
+2812200282.index
+1234216054.index
+4135818063.index
+1124027945.index

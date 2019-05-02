@@ -1,0 +1,31 @@
+package com.stackroute;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.stackroute.domain.Movie;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		System.out.println("First entry with application context");
+        ApplicationContext context1 = new ClassPathXmlApplicationContext("beans.xml");
+        Movie movie1 = context1.getBean("movie1",Movie.class);
+        System.out.println(movie1+"\n");
+		
+		System.out.println("Using ApplicationContextAware");
+        AbstractApplicationContext context2 = new ClassPathXmlApplicationContext("beans.xml");
+        context2.registerShutdownHook();	
+        Movie movie2 = context2.getBean("movie1",Movie.class);
+        System.out.println(movie2);
+        movie2.setApplicationContext(context1);
+
+        AbstractApplicationContext  context3 = new ClassPathXmlApplicationContext("beans2.xml");
+        context3.registerShutdownHook();
+	}
+
+}

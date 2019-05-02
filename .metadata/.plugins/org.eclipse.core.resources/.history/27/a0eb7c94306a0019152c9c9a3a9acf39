@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans>
+    <bean id="movie3"  autowire="byType" class="com.stackroute.Movie">
+    </bean>
+
+    <bean id="actor3" class="com.stackroute.Actor">
+        <property name="name" value="Samantha"/>
+        <property name="gender" value="female"/>
+        <property name="age" value="28"/>
+    </bean>
+</beans>

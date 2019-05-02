@@ -1,0 +1,10 @@
+<html>
+<body>
+
+	<h4>Enter your name:</h4>
+	<form action="greet">
+		<input type="text" name="t1">
+		<input type="submit">
+	</form>
+</body>
+</html>

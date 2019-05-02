@@ -1,0 +1,20 @@
+package com.stackroute;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.stackroute.domain.Actor;
+import com.stackroute.domain.Movie;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+		Actor ar=(Actor)context.getBean("actor");
+		Movie m=(Movie)context.getBean("movie");
+		System.out.println("Name:"+m.getActor().getName()+"Gender:"+m.getActor().getGender()+"Age:"+m.getActor().getAge());
+
+	}
+
+}

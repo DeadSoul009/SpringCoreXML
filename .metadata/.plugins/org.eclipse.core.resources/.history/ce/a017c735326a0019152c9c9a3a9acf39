@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="movie1" autowire="byName"  class="com.stackroute.domain.Movie">
+    </bean>
+    <bean id="movie2"  autowire="constructor" class="com.stackroute.domain.Movie">
+    </bean>
+    <bean id="actor1" class="com.stackroute.domain.Actor">
+        <property name="name" value="abc"/>
+        <property name="gender" value="male"/>
+        <property name="age" value="28"/>
+    </bean>
+    <bean id="actor2" class="com.stackroute.domain.Actor">
+        <property name="name" value="xyz"/>
+        <property name="gender" value="female"/>
+        <property name="age" value="25"/>
+    </bean>
+    <bean id="actor3" class="com.stackroute.domain.Actor">
+        <property name="name" value="mno"/>
+        <property name="gender" value="male"/>
+        <property name="age" value="26"/>
+    </bean>
+</beans>

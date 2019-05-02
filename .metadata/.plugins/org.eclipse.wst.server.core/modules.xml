@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.j2ee.server:firstmvc" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:task6" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:task5" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:task4"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:task3"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:task2" serverId="Tomcat v9.0 Server at localhost"/>
+</modules>

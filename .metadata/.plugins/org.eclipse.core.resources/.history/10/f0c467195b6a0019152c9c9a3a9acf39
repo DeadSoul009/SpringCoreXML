@@ -1,0 +1,20 @@
+package com.stackroute;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.stackroute.domain.LifeCycle;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        LifeCycle life = (LifeCycle)context.getBean("beanlifecycle");
+
+            context.close();
+
+	}
+
+}

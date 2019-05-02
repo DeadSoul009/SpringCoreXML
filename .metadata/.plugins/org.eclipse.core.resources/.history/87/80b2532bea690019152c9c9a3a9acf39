@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<!-- bean definitions here -->
+	
+	<bean id="actor1" class="com.stackroute.domain.Actor">
+	<constructor-arg index="0" value="abc"/>
+	<constructor-arg index="1" value="male"/>
+	<constructor-arg index="2" value="28"/>
+	</bean>
+	
+	<bean id="actor2" class="com.stackroute.domain.Actor">
+	<constructor-arg index="0" value="abc"/>
+	<constructor-arg index="1" value="male"/>
+	<constructor-arg index="2" value="28"/>
+	</bean>
+	
+	<bean id="actor3" class="com.stackroute.domain.Actor">
+	<constructor-arg index="0" value="abc"/>
+	<constructor-arg index="1" value="male"/>
+	<constructor-arg index="2" value="28"/>
+	</bean>
+	
+	<bean id="movie1" class="com.stackroute.domain.Movie">
+	<constructor-arg ref="actor1"/>	
+	</bean>
+	
+	<bean id="movie2" class="com.stackroute.domain.Movie">
+	<constructor-arg ref="actor2"/>	
+	</bean>
+	
+	<bean id="movie3" class="com.stackroute.domain.Movie">
+	<constructor-arg ref="actor3"/>		
+	</bean>	
+	
+</beans>

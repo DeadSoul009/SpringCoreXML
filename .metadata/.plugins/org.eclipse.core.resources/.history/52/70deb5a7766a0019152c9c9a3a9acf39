@@ -1,0 +1,9 @@
+package com.stackroute;
+
+public class GreetController {
+
+	public void greet()
+	{
+		
+	}
+}

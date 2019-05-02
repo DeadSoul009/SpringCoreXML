@@ -1,0 +1,21 @@
+package com.stackroute.domain;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+public class BeanFact  implements BeanFactoryAware{
+	Movie m;
+    public Movie getM() {
+		return m;
+	}
+	public void setM(Movie m) {
+		this.m = m;
+	}
+	@Override
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+        System.out.println("setting the BeanFact:");
+    }
+    public BeanFact(){
+        System.out.println("BeanFact is started.");
+    }
+}

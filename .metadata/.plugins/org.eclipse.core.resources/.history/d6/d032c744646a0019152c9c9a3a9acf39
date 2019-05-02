@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+	
+	<bean id="actor1" class="com.stackroute.domain.Actor">
+	<constructor-arg index="0" value="abc"/>
+	<constructor-arg index="1" value="male"/>
+	<constructor-arg index="2" value="28"/>
+	</bean>
+	
+	<bean id="actor2" class="com.stackroute.domain.Actor">
+	<constructor-arg index="0" value="xyz"/>
+	<constructor-arg index="1" value="female"/>
+	<constructor-arg index="2" value="25"/>
+	</bean>
+	
+	<bean id="actor3" class="com.stackroute.domain.Actor">
+	<constructor-arg index="0" value="mno"/>
+	<constructor-arg index="1" value="male"/>
+	<constructor-arg index="2" value="26"/>
+	</bean>
+	
+	<bean id="movie1" class="com.stackroute.domain.Movie">
+	<constructor-arg ref="actor1"/>	
+	</bean>
+	
+	<bean id="movie2" class="com.stackroute.domain.Movie">
+	<constructor-arg ref="actor2"/>	
+	</bean>
+	
+	<bean id="movie3" class="com.stackroute.domain.Movie">
+	<constructor-arg ref="actor3"/>		
+	</bean>	
+	-->
+	
+	<bean id="actor4" scope="prototype"class="com.stackroute.domain.Actor">
+	<property name="name" value="mno"/>
+	<property name="gender" value="male"/>
+	<property name="age" value="26"/>
+	</bean>
+	
+	<bean id="actor5" scope="singleton" class="com.stackroute.domain.Actor">
+	<constructor-arg index="0" type="java.lang.String" value="mno"/>
+	<constructor-arg index="1" type="java.lang.String" value="male"/>
+	<constructor-arg index="2" type="int" value="26"/>
+	</bean>
+	
+	<bean name="movie4,movie5"  class="com.stackroute.domain.Movie">
+	<constructor-arg index="0" ref="actor4"/>	
+	<constructor-arg index="1" ref="actor5"/>
+	</bean>
+	
+	
+</beans>

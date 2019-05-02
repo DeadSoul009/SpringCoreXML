@@ -1,0 +1,19 @@
+package com.stackroute;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.stackroute.domain.LifeCycle;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        Movie movie = context.getBean("movie",Movie.class);
+        System.out.println(movie+"\n");
+
+	}
+
+}

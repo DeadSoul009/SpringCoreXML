@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;task2/src/main/resources&apos;&#x0A;- Original project: &apos;task1&apos;&#x0A;- Destination element: &apos;task2/src/main/resources&apos;&#x0A;- Original elements:&#x0A;     task1/src/main/java/com.stackroute.domain&#x0A;     task1/src/main/java/com.stackroute" description="Copy packages" destination="=task2/src\/main\/resources" element1="/src\/main\/java&lt;com.stackroute.domain" element2="/src\/main\/java&lt;com.stackroute" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1556471141699" version="1.0"/>
+</session>
